@@ -7,12 +7,44 @@
     <title>YIPL-Frontend Challenge</title>
     
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-
 
 </head>
 <body>
-    YIPL-Frontend Challenge
+    <header class="header">
+
+        <div class="header__logo-box">
+            <img src="img/logo-frontend-ninja.png" alt="header ninja logo" class="header__logo">
+        </div>
+
+        <nav class="navigation">
+            <ul class="navigation__box">
+                <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Work</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Contact</a></li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                        <img src="img/svg/ic-search.svg" alt="search icon" class="navigation__search-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__text-box">
+            <!-- <div class="heading-primary"> -->
+                <h1 class="heading-primary--main">Are you a frontend ninja?</h1>            
+                <p class="heading-primary--sub">
+                    Frontend ninjas are the superheroes who bring life into designs. We're looking for 
+                    the frontend ninjas with knack of amazing attention to detail.<br>Are you one?
+                </p>
+            <!-- </div> -->
+                <a href="#" class="btn">
+                    <span>apply now</span>
+                    <img src="img/svg/ic-arrow.svg" alt="arrow icon" class="btn__arrow">
+                </a>
+        </div>
+    </header>
 </body>
 </html>
