@@ -9,3 +9,26 @@
     display: flex;
     justify-content: space-around;
 }
+
+.mid-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 11rem 0;
+
+    &__line {
+        height: 1px;
+        width: 12.5rem;
+        background-color: var(--apple);
+    }
+
+    &__logo-box {
+        width: 5rem;
+        margin: 0 2.5rem;
+    }
+
+    &__logo {
+        display: block;
+        object-fit: contain;
+    }
+}

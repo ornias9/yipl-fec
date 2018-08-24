@@ -5,15 +5,18 @@
 
     }
 
+    
     &__item {
         display: flex;
         align-items: center;
         padding: 2.7rem 0;
+        position: relative;
         
         &:not(:last-child) {
             border-bottom: 1px solid rgba(136, 197, 66, .2);
         }
     }
+
 
     &__item-hour{
         display: flex;
@@ -26,7 +29,10 @@
         opacity: .5;
         text-transform: uppercase;
         font-size: 1.3rem;
-        margin-top: .6rem;
+        // margin-top: .6rem;
+        position: absolute;
+        top: 63%;
+        left: 0;
     }
 
     &__link {

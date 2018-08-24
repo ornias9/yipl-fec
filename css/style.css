@@ -111,7 +111,8 @@ body {
   .news__item {
     display: flex;
     align-items: center;
-    padding: 2.7rem 0; }
+    padding: 2.7rem 0;
+    position: relative; }
     .news__item:not(:last-child) {
       border-bottom: 1px solid rgba(136, 197, 66, 0.2); }
   .news__item-hour {
@@ -123,7 +124,9 @@ body {
     opacity: .5;
     text-transform: uppercase;
     font-size: 1.3rem;
-    margin-top: .6rem; }
+    position: absolute;
+    top: 63%;
+    left: 0; }
   .news__link {
     display: inline-block;
     text-decoration: none;
@@ -206,3 +209,19 @@ body {
 .news-content {
   display: flex;
   justify-content: space-around; }
+
+.mid-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 11rem 0; }
+  .mid-logo__line {
+    height: 1px;
+    width: 12.5rem;
+    background-color: var(--apple); }
+  .mid-logo__logo-box {
+    width: 5rem;
+    margin: 0 2.5rem; }
+  .mid-logo__logo {
+    display: block;
+    object-fit: contain; }
