@@ -50,6 +50,11 @@ body {
   color: var(--grey-dark-3);
   font-weight: 400; }
 
+.food-photos__heading--sub {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-top: 1.5rem; }
+
 .text-align-left {
   text-align: left; }
 
@@ -74,6 +79,17 @@ body {
     transform: translateY(-3px); }
   .btn:active {
     transform: translateY(-1px); }
+
+.gallery {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap; }
+  .gallery__item {
+    width: 33.3333%;
+    overflow: hidden; }
+  .gallery__photo {
+    display: block;
+    object-fit: fill; }
 
 .navigation {
   position: absolute;
@@ -155,7 +171,7 @@ body {
   .requirement-description:not(:last-child) {
     margin-right: 8rem; }
   .requirement-description__photo {
-    display: inline-block;
+    display: block;
     width: 100%; }
   .requirement-description__text {
     margin-top: 4rem;
