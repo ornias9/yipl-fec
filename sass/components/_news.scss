@@ -50,6 +50,12 @@
         margin-right: .6rem;
         object-fit: contain;
     }
+
+    &--right {
+        .news__item {
+            padding: 2.85rem 0;
+        }
+    }
 }
 
 .separator {
