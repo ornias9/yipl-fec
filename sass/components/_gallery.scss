@@ -2,16 +2,18 @@
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
+    // align-content: center;
     // width: 100vw;
 
     &__item {
         // display: flex;
-        width: 33.3333%;
+        // width: 33.3333%;
+        flex: 0 0 33.3333%;
         overflow: hidden;                           // when screen size is decreased, the last img size in row remain same but others shrink so to make all the size of item same when screen size is decreased. 
     }
 
     &__photo {
         display: block;                             //to remove margin like space below img
-        object-fit: fill;                        
+        object-fit: contain;                      
     }
 }
