@@ -410,9 +410,7 @@ body {
     transition: animation .2s; }
     @media only screen and (max-width: 37.5em) {
       .header__logo-box {
-        top: 60rem;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
+        display: none; } }
     .header__logo-box:hover {
       animation: pulsate .5s infinite; }
   .header__logo {
