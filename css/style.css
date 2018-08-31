@@ -127,6 +127,9 @@ body {
   text-align: center;
   color: var(--grey-dark-3);
   font-weight: 400; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 3rem; } }
 
 .food-photos__heading--sub {
   font-size: 1.4rem;
@@ -305,6 +308,10 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .requirement-details {
+      flex-direction: column;
+      align-items: center; } }
 
 .requirement-description {
   width: 30%; }
@@ -327,6 +334,29 @@ body {
     color: var(--grey-dark-1);
     opacity: .78;
     line-height: 1.57; }
+  @media only screen and (max-width: 56.25em) {
+    .requirement-description:not(:last-child) {
+      margin-right: 2.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .requirement-description {
+      width: 75%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .requirement-description:not(:last-child) {
+        margin-right: 0; }
+      .requirement-description:not(:first-child) {
+        margin-top: 3rem; }
+      .requirement-description__photo-box {
+        width: 100%; }
+      .requirement-description__text {
+        width: 100%; }
+      .requirement-description__heading {
+        font-size: 3rem; }
+      .requirement-description__paragraph {
+        font-size: 1.7rem;
+        line-height: 1;
+        text-align: justify; } }
 
 .header {
   height: 90vh;
@@ -400,6 +430,12 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 14.5rem 19rem; }
+  @media only screen and (max-width: 75em) {
+    .requirements {
+      padding: 12rem  5rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .requirements {
+      padding-top: 7rem; } }
 
 .news-content {
   display: flex;

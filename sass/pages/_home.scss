@@ -3,6 +3,14 @@
     flex-direction: column;
     align-items: center;
     padding: 14.5rem 19rem;
+
+    @include respond(tab-landscape) {
+        padding: 12rem  5rem;
+    }
+
+    @include respond(tab-portrait) {
+        padding-top: 7rem;
+    }
 }
 
 .news-content {
