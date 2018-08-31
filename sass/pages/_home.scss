@@ -24,12 +24,28 @@
     &__logo-box {
         width: 5rem;
         margin: 0 2.5rem;
+        transition: all .5s ease-in-out;
+
+        &:hover,
+        &:focus {
+            transform: rotate(360deg);
+        }
+
+        // &:hover ~ .mid-logo__line--left {                        // <-- this one is not working so commented.
+        //     transform: translateX(-5rem);
+        // }
+
+        // &:hover + .mid-logo__line--right {
+        //     transform: translateX(5rem);
+        // }
     }
 
     &__logo {
         display: block;
         object-fit: contain;
     }
+
+    
 
 }
 

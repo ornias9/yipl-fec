@@ -41,6 +41,11 @@
         color: var(--jade-green);
         font-size: 1.6rem;
         transition: all .2s;
+
+        &:hover,
+        &:focus {
+            color: var(--apple);
+        }
     }
 
     &__globe {
@@ -53,7 +58,11 @@
 
     &--right {
         .news__item {
-            padding: 2.85rem 0;
+            padding-bottom: 3.5rem;
+
+            &:not(:first-child){
+               margin-top: -1rem;
+            }
         }
     }
 }

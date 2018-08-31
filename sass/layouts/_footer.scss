@@ -12,6 +12,11 @@
         .navigation__link{
             text-transform: uppercase;
             opacity: 1;
+
+            &:hover,
+            &:focus {
+                text-shadow: .2rem .7rem 1rem rgba(0, 0, 0, .7);
+            }
         }
 
         .navigation__item--active .navigation__link{
