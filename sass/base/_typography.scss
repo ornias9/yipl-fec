@@ -17,6 +17,18 @@ body {
         margin-bottom: 2.5rem; 
         
         animation: bounceup 1s cubic-bezier(.24,.31,.11,1.04);
+
+        @include respond(tab-landscape) {                   //below 1200px
+            font-size: 7.5rem;
+        }
+
+        @include respond(tab-portrait) {                    //below 900px
+            font-size: 5.5rem;
+        }
+
+        @include respond(phone) {
+            font-size: 3.5rem;
+        }
     }
 
     &--sub {
@@ -28,6 +40,18 @@ body {
         // font-weight: 300;
 
         animation: enlarge 1s ease-out;
+
+        @include respond(tab-landscape) {
+            width: 55%;
+        }
+
+        @include respond(tab-portrait) {
+            width: 70%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
     }   
 }
 

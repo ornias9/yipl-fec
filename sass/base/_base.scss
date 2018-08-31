@@ -7,7 +7,24 @@
 }
 
 html {
-    font-size: 62.5%                    //1rem==10px;
+    font-size: 62.5%;                   //1rem==10px;
+
+    @include respond(tab-landscape) {
+		font-size: 56.25%;						// want 1rem = 9px, so 9/16 = 56.25%
+	}
+
+	@include respond(tab-portrait) {
+		font-size: 50%;							// want 1rem = 8px, so 8/16 = .5  =50%
+	}
+
+	// @include respond(phone) {
+	// 	font-size: 30%;							// want 1rem = 4.8px, so 4.8/16 = .3  =30%
+	// }
+
+
+	@include respond(big-desktop) {
+		font-size: 80%;							// want 1 rem = 12, so 12/16 = 
+	}
 }
 
 body {

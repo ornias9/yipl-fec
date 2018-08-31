@@ -1,3 +1,22 @@
+/*
+0 - 600px:            Phone
+600 - 900px:          Tablet Portrait
+900 - 1200px:         Tablet landscape
+
+[1200 - 1800px]:      this range is where the normal styles applies i.e. desktop first
+
+1800px +:             big desktop
+
+*/
+/*
+$breakpoint argument choices :-
+- phone
+- tab-portrait
+- tab-landscape
+- big-desktop
+
+1em = 16px  default browser font size
+*/
 :root {
   --grey-dark-1: #4a4a4a;
   --grey-dark-2: #777;
@@ -51,6 +70,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -68,6 +96,15 @@ body {
     font-weight: 700;
     margin-bottom: 2.5rem;
     animation: bounceup 1s cubic-bezier(0.24, 0.31, 0.11, 1.04); }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--main {
+        font-size: 7.5rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--main {
+        font-size: 5.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 3.5rem; } }
   .heading-primary--sub {
     width: 50%;
     font-size: 2rem;
@@ -75,6 +112,15 @@ body {
     line-height: 1.4;
     margin-bottom: 4rem;
     animation: enlarge 1s ease-out; }
+    @media only screen and (max-width: 75em) {
+      .heading-primary--sub {
+        width: 55%; } }
+    @media only screen and (max-width: 56.25em) {
+      .heading-primary--sub {
+        width: 70%; } }
+    @media only screen and (max-width: 37.5em) {
+      .heading-primary--sub {
+        width: 100%; } }
 
 .heading-secondary {
   font-size: 4.8rem;
@@ -173,6 +219,14 @@ body {
   position: absolute;
   top: 5rem;
   right: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation {
+      position: relative;
+      top: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      padding: 1rem; } }
   .navigation__box {
     display: flex;
     align-items: center; }
@@ -286,6 +340,11 @@ body {
     top: 5rem;
     left: 5rem;
     transition: animation .2s; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo-box {
+        top: 60rem;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
     .header__logo-box:hover {
       animation: pulsate .5s infinite; }
   .header__logo {
@@ -308,9 +367,15 @@ body {
   align-items: center;
   padding: 2.5rem 6rem;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding: 1rem; } }
   .footer__nav {
     top: 2rem;
     right: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__nav {
+        visibility: hidden; } }
     .footer__nav .navigation__link {
       text-transform: uppercase;
       opacity: 1; }
@@ -323,6 +388,12 @@ body {
   font-size: 1.4rem;
   text-align: left;
   color: #fff; }
+  @media only screen and (max-width: 37.5em) {
+    .copyright {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
 
 .requirements {
   display: flex;

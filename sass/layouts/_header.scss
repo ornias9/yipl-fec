@@ -15,6 +15,13 @@
         left: 5rem;
         transition: animation .2s;
 
+        @include respond(phone) {
+            top: 60rem;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
         &:hover {
             animation: pulsate .5s infinite;
         }
