@@ -435,7 +435,7 @@ body {
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .footer {
-      padding: 1rem; } }
+      padding: 2rem; } }
   .footer__nav {
     top: 2rem;
     right: 6rem; }
