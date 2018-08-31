@@ -16,4 +16,20 @@
         display: block;                             //to remove margin like space below img
         object-fit: contain;                      
     }
+
+    @include respond(tab-portrait) {
+        &__item {
+            height: 30rem;
+        }
+
+        &__photo {
+            object-fit: cover;
+        }
+    }
+
+    @include respond(phone) {
+        &__item {
+            flex: 0 0 50%;
+        }
+    }
 }

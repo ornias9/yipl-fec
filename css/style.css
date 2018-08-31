@@ -136,6 +136,12 @@ body {
   font-style: italic;
   margin-top: 1.5rem; }
 
+@media only screen and (max-width: 37.5em) {
+  .food-photos__heading--main {
+    font-size: 2.5rem; }
+  .food-photos__heading--sub {
+    margin-top: 0; } }
+
 .text-align-left {
   text-align: left; }
 
@@ -206,6 +212,13 @@ body {
   .facilities__mid-logo {
     opacity: .5;
     margin-top: 3rem; }
+  @media only screen and (max-width: 75em) {
+    .facilities {
+      padding-top: 10rem; }
+      .facilities__list {
+        margin: 0 5rem; }
+      .facilities__item {
+        margin-right: 1.5rem; } }
 
 .gallery {
   margin-top: 3rem;
@@ -217,6 +230,14 @@ body {
   .gallery__photo {
     display: block;
     object-fit: contain; }
+  @media only screen and (max-width: 56.25em) {
+    .gallery__item {
+      height: 30rem; }
+    .gallery__photo {
+      object-fit: cover; } }
+  @media only screen and (max-width: 37.5em) {
+    .gallery__item {
+      flex: 0 0 50%; } }
 
 .navigation {
   position: absolute;

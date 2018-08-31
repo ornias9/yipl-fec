@@ -87,4 +87,14 @@ body {
         font-style: italic;
         margin-top: 1.5rem;
     }
+
+    @include respond(phone) {
+        &--main {
+            font-size: 2.5rem;
+        }
+
+        &--sub {
+            margin-top: 0;
+        }
+    }
 }

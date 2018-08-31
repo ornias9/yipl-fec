@@ -59,4 +59,16 @@
         margin-top: 3rem;
     }
 
+    @include respond(tab-landscape) {
+        padding-top: 10rem;
+
+        &__list {
+            margin: 0 5rem;
+        }
+
+        &__item {
+            margin-right: 1.5rem;
+        }
+    }
+
 }
