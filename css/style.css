@@ -441,7 +441,7 @@ body {
     right: 6rem; }
     @media only screen and (max-width: 37.5em) {
       .footer__nav {
-        visibility: hidden; } }
+        display: none; } }
     .footer__nav .navigation__link {
       text-transform: uppercase;
       opacity: 1; }
