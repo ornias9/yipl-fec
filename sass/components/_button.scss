@@ -12,6 +12,9 @@
     align-items: center;
     transition: all .2s;
 
+    animation: moveinup 1s ease-in .5s;
+    animation-fill-mode: backwards;
+
     &__arrow {
         display: inline-block;
         height: 1.6rem;

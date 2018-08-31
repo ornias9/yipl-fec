@@ -14,7 +14,9 @@ body {
     &--main {
         font-size: 8.2rem;
         font-weight: 700;
-        margin-bottom: 2.5rem;        
+        margin-bottom: 2.5rem; 
+        
+        animation: bounceup 1s cubic-bezier(.24,.31,.11,1.04);
     }
 
     &--sub {
@@ -24,6 +26,8 @@ body {
         line-height: 1.4;      
         margin-bottom: 4rem;
         // font-weight: 300;
+
+        animation: enlarge 1s ease-out;
     }   
 }
 
