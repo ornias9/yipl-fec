@@ -65,10 +65,39 @@
             }
         }
     }
+
+
+    @include respond(tab-portrait) {
+        width: 55rem;
+
+        &:not(:first-child) {
+            margin-top: 5rem;
+        }
+
+        &__link {
+            font-size: 2rem;
+        }
+
+        &__item:last-child {
+            justify-content: center;
+        }
+    }
+
+    @include respond(phone) {
+        width: 70%;
+
+        &__timestamp {
+            top: 70%;
+        }
+    }
 }
 
 .separator {
     width: 1px;
     height: 34.5rem;
     background-color: var(--apple);
+
+    @include respond(tab-portrait) {
+        display: none;
+    }
 }
