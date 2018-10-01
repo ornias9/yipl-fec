@@ -13,7 +13,8 @@
     }
 
     &__photo {
-        display: block;                             //to remove margin like space below img
+        display: block;     
+        width: 100%;                        //to remove margin like space below img
         object-fit: contain;                      
     }
 
